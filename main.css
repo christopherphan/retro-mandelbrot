@@ -1,0 +1,72 @@
+body {
+  color: white;
+  font-family: monospace;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-rows: 2fr 20fr 2fr;
+  grid-template-columns: 2fr 20fr 2fr;
+  background-color: #080808;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellowgreen;
+}
+
+a:hover {
+  color: yellow;
+  background-color: darkgreen;
+}
+
+a.noeffect:visited {
+  color: inherit;
+}
+
+a.noeffect:hover {
+  color: inherit;
+  background-color: inherit;
+}
+
+#overlay {
+  grid-area: 1/1/4/4;
+  background: repeating-linear-gradient(
+    black,
+    black 2px,
+    #383647 2px,
+    #383647 4px
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+#mandelbrot {
+  grid-area: 2/2/3/3;
+  background: none;
+  padding: 5px;
+  color: #34a434;
+  font-family: monospace;
+  font-size: 1.2vw;
+}
+
+#info {
+  grid-area: 3/2/4/3;
+  background: none;
+  padding: 5px;
+  color: limegreen;
+  font-family: monospace;
+  font-size: 1.2vw;
+}
+
+.inside {
+  color: limegreen;
+  background: none;
+}
+
+.outside {
+  background: #3535a9;
+  color: black;
+}

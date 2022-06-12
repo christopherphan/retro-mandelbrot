@@ -70,3 +70,8 @@ a.noeffect:hover {
   background: #3535a9;
   color: black;
 }
+
+#instructions {
+  background: white;
+  color: black;
+}
